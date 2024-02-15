@@ -7,7 +7,7 @@ public class Product {
     private double price;
     private int quantity;
 
-    // Constructori
+ 
     public Product(int productId) {
         this.productId = productId;
     }
@@ -19,12 +19,12 @@ public class Product {
         this.quantity = quantity;
     }
 
-    // Metoda pentru a returna prețul produsului
+   
     public double getPrice() {
         return price;
     }
 
-    // Metoda pentru a actualiza cantitatea disponibilă în stoc
+    
     public void updateQuantity(int newQuantity) {
         if (newQuantity >= 0) {
             this.quantity = newQuantity;
@@ -35,7 +35,6 @@ public class Product {
     }
 
     public static void main(String[] args) {
-        // Exemplu de utilizare a clasei Product
         Product product1 = new Product(1, "Laptop", 1500.0, 10);
         System.out.println("Prețul produsului: " + product1.getPrice() + " RON");
         product1.updateQuantity(15);
